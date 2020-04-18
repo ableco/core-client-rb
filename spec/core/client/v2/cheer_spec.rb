@@ -4,5 +4,4 @@ RSpec.describe Core::Client::V2::Cheer do
     expect(cheer).to be_a Core::Client::V2::Cheer
     expect(cheer.type).to eq "cheers" 
   end
-
 end
