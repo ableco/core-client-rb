@@ -12,7 +12,7 @@ RSpec.describe Core::Client::V2::User do
   end
 
   it ".current returns an existing user" do
-    user = Core::Client::V2::User.current.first
+    user = Core::Client::V2::User.current
     expect(user).to be_a Core::Client::V2::User
     expect(user.fullName).to eq "Mike Potter"
   end
