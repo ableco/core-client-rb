@@ -36,6 +36,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency "dotenv", "~> 2.7"
   spec.add_dependency "json_api_client", "~> 1.16"
   spec.add_dependency "rest-client", "~> 2.1"
-  spec.add_dependency "activesupport", "6.0.3.1"
+  spec.add_dependency "activesupport", "~> 6.0.3", ">= 6.0.3.1"
   spec.add_dependency "rack", "~> 2.2"
 end
