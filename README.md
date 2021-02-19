@@ -33,7 +33,7 @@ Or install it yourself as:
 
 To use the Core API you need a token, which can be request via Slack in the `#core` channel. This token needs to be set in an ENV variable called `CORE_API_TOKEN`. `Core::Client` will automatically use that ENV variable to sign all the requests sent through the gem.
 
-To use a different Core environment, you need to set the `CORE_API_URL` variable. `Core::Client` will automatically sent all the requests to the value in that ENV variable.
+To use a different Core environment, you need to set the `CORE_URL` variable. `Core::Client` will automatically sent all the requests to the value in that ENV variable.
 
 Both versions (v1 and v2) share similar methods to access the resources:
 - `.all` returns an array of resources
