@@ -5,7 +5,7 @@ module Core
   module Client
     module V2
       class Base < JsonApiClient::Resource
-        self.site = "https://core.able.co/api/v2"
+        self.site = "#{ENV['CORE_URL'] || 'https://core.able.co'}/api/v2"
         self.raise_on_blank_find_param = true
 
         class << self

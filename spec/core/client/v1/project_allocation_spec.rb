@@ -13,6 +13,5 @@ RSpec.describe Core::Client::V1::ProjectAllocation do
     ).first
     expect(project_allocation).to be_a Core::Client::V1::ProjectAllocation
     expect(project_allocation.projectId).to eq 114
-
   end
 end
