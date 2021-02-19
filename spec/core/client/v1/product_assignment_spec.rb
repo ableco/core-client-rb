@@ -11,9 +11,11 @@ RSpec.describe Core::Client::V1::ProductAssignment do
     product_assignment = Core::Client::V1::ProductAssignment.where(
       product_id: 5,
       start_date: date.beginning_of_month,
-      end_date: date.end_of_month,
+      end_date: date.end_of_month
     ).first
     expect(product_assignment).to be_a Core::Client::V1::ProductAssignment
-    expect(date.beginning_of_month..date.end_of_month).to cover(Date.parse(product_assignment.periodStart))
+    expect(date.beginning_of_month..date.end_of_month).to cover(
+      Date.parse(product_assignment.periodStart)
+    )
   end
 end

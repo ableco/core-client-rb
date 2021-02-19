@@ -10,7 +10,7 @@ module Core
         class << self
           def client
             @client ||= RestClient::Resource.new(
-              ENV['CORE_API_URL'] || "https://core.able.co/api",
+              "#{ENV['CORE_URL'] || 'https://core.able.co'}/api",
               headers: { "Authorization" => "Bearer #{ENV['CORE_API_TOKEN']}" }
             )
           end
